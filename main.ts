@@ -220,5 +220,5 @@
 // }
 // console.log(myFunction({ one: 1, "prop-2": 2 }));
 
-//32-masala
+
 
