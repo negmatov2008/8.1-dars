@@ -220,5 +220,70 @@
 // }
 // console.log(myFunction({ one: 1, "prop-2": 2 }));
 
+//34-masala
+// function myFunction(a: string, b: string): object {
+//   return { [a]: b };
+// }
+// console.log(myFunction("a", "b"));
 
+//35-masala
+// function myFunction(a: string[], b: number[]): object {
+//   const obj: any = {};
+//    a.forEach((key: string, i) => {
+//     obj[key] = b[i];
+//   });
+//   return obj;
+// }
+// console.log(myFunction(["a", "b", "c"], [1, 2, 3]));
 
+//36-masala
+// function myFunction(a:{} ): string[] {
+//   return a.keys();
+// }
+// console.log(myFunction({ a: 1, b: 2, c: 3 }));
+
+//37-masala
+// function myFunction(obj: object): object | undefined {
+//   return obj?.a?.b;
+// }
+
+//38-masala
+// function myFunction(a: {}): number {
+//   const arr: number[] = Object.values(a);
+//   return arr.reduce((acc, el) => acc + el, 0);
+// }
+// console.log(myFunction({ a: 1, b: 2, c: 3 }));
+
+//39-masala
+// function myFunction(obj: any): {} {
+//   const newObj = { ...obj };
+//   delete newObj["b"];
+//   return newObj;
+// }
+// console.log(myFunction({ a: 1, b: 7, c: 3 }));
+
+//40-masala
+// function myFunction(x: any, y: any): any {
+//  // Create a new object by merging obj1 and obj2
+//  const mergedObject = {...x, ...y};
+
+//  // Correct the property name 'b' to 'd' if 'b' exists in obj2
+//  if (mergedObject.hasOwnProperty('b')) {
+//      mergedObject.d = mergedObject.b;
+//      delete mergedObject.b;
+//  }
+
+//  return mergedObject;
+// }
+// console.log({ a: 1, b: 2 }, { c: 3, b: 4, e: 5 });
+
+//41-masala
+// function myFunction(a:any, b:any):{} {
+//   const multipliedObject = {}!;
+//     for (const key in a) {
+//         if (a.hasOwnProperty(key)) {
+//             multipliedObject?[key] = a[key] * b;
+//         }
+//     }
+//     return multipliedObject;
+// }
